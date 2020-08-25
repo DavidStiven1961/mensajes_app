@@ -19,9 +19,6 @@ public class ConexionMysql {
         Connection conexion = null;
         try{
             conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/mensajes_app?serverTimezone=UTC","root","");
-        if(conexion != null){
-            System.out.println("Se establecion con la base de datos");
-        }
         }catch(SQLException e){
         System.out.println(e);
     }
